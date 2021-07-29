@@ -3,28 +3,28 @@
 <body style="background-color: #e361ff;">
 <form action="endpage.htm">
 <label for ="fname" >NAME:</label>
-<input type="text" id="name" name="name" placeholder="eg:sanchana"  pattern="[A-Za-z].{,2}" title="only alphabets allowed and upto 20 characters only" >
+<input type="text" id="name" name="name" placeholder="eg:sanchana"  pattern="[A-Za-z].{,2}" title="only alphabets allowed and upto 20 characters only" required >
 <br>
 <br>
 <label for ="DOB">DOB:</label>
-<input type="date" id="DOB" name="DOB" pattern="" title="NO ALPHABETS ALLOWED" >
+<input type="date" id="DOB" name="DOB" pattern="" title="NO ALPHABETS ALLOWED" required>
 <br>
 <br>
 <label for ="EMAIL">EMAIL:</label>
-<input type="email" id="EMAIL" name="EMAIL" placeholder="abc@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="enter the correct format">
+<input type="email" id="EMAIL" name="EMAIL" placeholder="abc@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="enter the correct format" required>
 <br>
 <br>
 <p>SELECT YOUR GENDER:</p>
-<input type="radio" id="FEMALE" name="gender" value="g">
+<input type="radio" id="FEMALE" name="gender" value="g" required>
 <label for="g">female</label><br>
-<input type="radio" id="MALE" name="gender" value="g">
+<input type="radio" id="MALE" name="gender" value="g" required>
 <label for="g">male</label><br>
-<input type="radio" id="others" name="gender" value="g">
+<input type="radio" id="others" name="gender" value="g" required>
 <label for="javascript">other</label>
 <br>
 <br>
 <label for ="mob">MOBILE_NUMBER:</label>
-<input type="tel" id="mob" name="mob" placeholder="76854-89754" pattern="[0-9]{10}" title="only 10 numbers allowed"  > 
+<input type="tel" id="mob" name="mob" placeholder="76854-89754" pattern="[0-9]{10}" title="only 10 numbers allowed" required  > 
 <br>
 <br>
 <label for ="add">ADDRESS:</label>
@@ -67,24 +67,24 @@
 <input type="text" id="pnc" name="pnc" > 
 <br>
 <br>
-<p>SELECT THE INTRESTED EVENTS</p>
-<input type="checkbox" id="evnt1" name="evnt1" value="event1" > 
+<p>SELECT THE INTERSTED EVENTS</p>
+<input type="checkbox" id="evnt1" name="evnt1" value="event1" required > 
 <label for ="evnt1">EVENT 1</label>
 <br>
-<input type="checkbox" id="evnt2" name="evnt2" value="event1" > 
+<input type="checkbox" id="evnt2" name="evnt2" value="event2"required > 
 <label for ="evnt2">EVENT 2</label>
 <br>
-<input type="checkbox" id="evnt3" name="evnt3" value="event3" > 
+<input type="checkbox" id="evnt3" name="evnt3" value="event3" required> 
 <label for ="evnt3">EVENT 3</label>
 <br>
-<input type="checkbox" id="evnt4" name="evnt4" value="event4" > 
+<input type="checkbox" id="evnt4" name="evnt4" value="event4" required> 
 <label for ="evnt3">EVENT 4</label>
 <br>
 <br>
 <p>ACCOMODATION NEEDED ?:</p>
-<input type="radio" id="yes" name="acc_needed" value="s">
+<input type="radio" id="yes" name="acc_needed" value="s"required>
 <label for="yes">yes</label><br>
-<input type="radio" id="no" name="acc_needed" value="n">
+<input type="radio" id="no" name="acc_needed" value="n"required>
 <label for="no">no</label><br>
 <br>
 <input type="submit" value="send response">
