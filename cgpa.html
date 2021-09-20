@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>CGPA CALCULATOR</title>
+        <style>
+        body
+        {
+          background-image:url("https://keralakaumudi.com/web-news/en/2019/05/NMAN0050218/image/students.1.204412.jpg" );
+            background-color: lightyellow;
+             background-repeat:no-repeat;
+             background-size:cover;
+        }
+        button 
+        {
+            border: none;
+            color: white;
+            background-color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+         </style>
+    </head>
+    <body>
+      <script>
+      function cgpa_find()
+      {  
+        var sum=0;
+      let j;
+        var m1=parseFloat(document.getElementById("1").value);
+      var m2=parseFloat(document.getElementById("2").value);
+      var m3=parseFloat(document.getElementById("3").value);
+      var m4=parseFloat(document.getElementById("4").value);
+      var m5=parseFloat(document.getElementById("5").value);
+      var m6=parseFloat(document.getElementById("6").value);
+      var m7=parseFloat(document.getElementById("7").value);
+      var m8=parseFloat(document.getElementById("8").value);
+      const array=[m1,m2,m3,m4,m5,m6,m7,m8];
+      //console.log(array[0]);
+      for(i=0;i<array.length;i++)
+      { 
+        console.log(array[i]);
+      } 
+      j=array.length;
+      console.log(j);
+      for(i=0;i<array.length;i++)
+      {   
+        if((isNaN(array[i]))||(array[i]==0))
+        { 
+          j=j-1;
+          continue;
+        }
+        sum=sum+array[i]
+        
+      } 
+        var	avg=sum/j;
+      var av=avg.toFixed(2);
+      console.log(av);
+      console.log(j);
+      
+      document.getElementById("ans").value=av;
+      }
+    </script>
+     <h1 style="background-color:black; color:white;" ><center>KONGU ENGINEERING COLLEGE<br>
+     CGPA CALCULATOR</center></h1>
+     <center>
+    <h1  >ENTER THE SEMESTER GPA AND CLICK ON THE "FIND" BUTTON</h1>
+    <p><b>SEMESTER 1:</b></p>
+    <input type="text" id="1">
+    <p><b>SEMESTER 2:</b></p>
+    <input type="text" id="2">
+    <p><b>SEMESTER 3:</b></p>
+    <input type="text" id="3">
+    <p><b>SEMESTER 4:</b></p>
+    <input type="text" id="4">
+    <p><b>SEMESTER 5:</b></p>
+    <input type="text" id="5">
+    <p><b>SEMESTER 6:</b></p>
+    <input type="text" id="6">
+    <p><b>SEMESTER 7:</b></p>
+    <input type="text" id="7">
+    <p><b>SEMESTER 8:</b></p>
+    <input type="text" id="8"><br>
+   <br><button id="b" onclick="cgpa_find()">FIND</button>
+  <h1>Your CGPA IS:</h1>
+  <input type="text" id="ans">
+</center> </body>
+</html>
