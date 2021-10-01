@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Area of SQUARE</title>
+    </head>
+    <script>
+        function s_area_find()
+        {  
+          var sum=0;
+        
+          var m1=parseFloat(document.getElementById("1").value);
+       sum=m1*m1;
+         document.getElementById("ans").value=sum;
+        }
+      </script>
+    <body style="background-color:blueviolet" >
+    <h1 style="background-color:black; color:white; padding: 50px;" ><center>SQUARE AREA CALCULATION</center></h1>
+      <center> 
+     <h1>ENTER THE SIDE:</h1>
+     <br>
+     <input type="text" id="1">   
+     <br>
+     <button id="b" onclick="s_area_find()" style="background-color: black; color:white; padding:15px 30px;  margin: 40px 40px;">FIND AREA</button>
+     <h1>THE AREA OF THE SQUARE IS:</h1>
+     <br>
+     <input type="text" id="ans">
+    </center></body>
+</html>

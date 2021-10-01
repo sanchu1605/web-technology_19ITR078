@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Area of Triangle</title>
+    </head>
+    <script>
+        function t_area_find()
+        {  
+          var sum=0;
+        
+          var M1=parseFloat(document.getElementById("1").value);
+          var M2=parseFloat(document.getElementById("2").value);
+          sum=0.5*M1*M2;
+         document.getElementById("ans").value=sum;
+        }
+      </script>
+    <body style="background-color:blueviolet" >
+    <h1 style="background-color:black; color:white; padding: 50px;" ><center>TRIANGLE AREA CALCULATION</center></h1>
+      <center> 
+    <h1>ENTER THE LENGTH:</h1>
+     <br>
+     <input type="text" id="1">   
+     <br>
+     <h1>ENTER THE BREADTH:</h1>
+     <br>
+     <input type="text" id="2">   <br>
+     <button id="b" onclick="t_area_find()" style="background-color: black; color:white; padding:15px 30px;  margin: 40px 40px;">FIND AREA</button>
+     <h1>THE AREA OF THE TRIANGLE IS:</h1>
+     <br>
+     <input type="text" id="ans">
+    </center></body>
+</html>
